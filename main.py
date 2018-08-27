@@ -1,11 +1,10 @@
-import requests
-from bs4 import BeautifulSoup
+from avito import Car
 
 
 def main():
-    url = 'https://www.avito.ru/krasnodar/avtomobili?pmax=200000&pmin=100000&radius=200&s_trg=3&i=1'
-    html = requests.get(url).text
-    bs = BeautifulSoup(html, 'html.parser')
+    current_item = Car()
+    a = current_item
+    print(a.id)
 
 
 if __name__ == '__main__':

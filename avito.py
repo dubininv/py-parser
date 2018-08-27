@@ -1,11 +1,10 @@
 class Ad:
+    # поля
     id: int = None
-
-    def __init__(self, ad_id):
-        self.id = ad_id
 
 
 class Car(Ad):
+    # поля
     mark: str = None
     model: str = None
     release_year: int = None
@@ -24,7 +23,3 @@ class Car(Ad):
     description: str = None
     price: int = None
     address: str = None
-
-    def __init__(self, ad_id, car_type):
-        Ad.__init__(self, ad_id)
-        self.type = car_type
