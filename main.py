@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 def main():
     url = 'https://sinoptik.com.ru'
     html = requests.get(url).text
-    bs = BeautifulSoup(html)
+    bs = BeautifulSoup(html, 'html.parser')
     main_div = bs.find('div', {'class', 'main'})
     print(main_div.prettify())
 
